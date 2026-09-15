@@ -1,0 +1,683 @@
+/* =========================================================
+   LUMORA RESTAURANT & GRILL
+   PREMIUM RESPONSIVE v2.0
+========================================================= */
+
+
+/* =========================================================
+   TABLET — 1100px
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .container {
+        width: min(92%, 1000px);
+    }
+
+    .nav-menu {
+        gap: 20px;
+    }
+
+    .intro-grid {
+        gap: 60px;
+    }
+
+    .intro-image img {
+        height: 540px;
+    }
+
+    .food-image {
+        height: 290px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1.3fr 1fr 1fr;
+    }
+
+    .footer-links:last-child {
+        grid-column: 2 / 4;
+    }
+}
+
+
+/* =========================================================
+   TABLET — 900px
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .section {
+        padding: 85px 0;
+    }
+
+
+    /* ================= NAVBAR ================= */
+
+    .navbar {
+        padding: 20px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        position: relative;
+        z-index: 1100;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+
+        width: min(330px, 85%);
+        height: 100vh;
+
+        padding: 100px 35px 40px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+
+        background: #11110f;
+
+        box-shadow: -15px 0 40px rgba(0,0,0,0.25);
+
+        transition: right 0.4s ease;
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+
+    .nav-menu > a:not(.nav-btn) {
+        font-size: 15px;
+    }
+
+    .nav-btn {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+
+    /* ================= HERO ================= */
+
+    .hero {
+        min-height: 800px;
+        background-position: 60% center;
+    }
+
+    .hero-overlay {
+        background:
+            linear-gradient(
+                90deg,
+                rgba(10,10,8,0.90),
+                rgba(10,10,8,0.50)
+            );
+    }
+
+    .hero-text {
+        max-width: 650px;
+    }
+
+    .hero h1 {
+        font-size: clamp(52px, 9vw, 78px);
+    }
+
+
+    /* ================= INTRO ================= */
+
+    .intro-grid {
+        grid-template-columns: 1fr;
+        gap: 55px;
+    }
+
+    .intro-image {
+        max-width: 700px;
+    }
+
+    .intro-image img {
+        height: 600px;
+    }
+
+    .intro-content {
+        max-width: 700px;
+    }
+
+
+    /* ================= FOOD ================= */
+
+    .food-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .food-grid .food-card:last-child {
+        grid-column: 1 / -1;
+        max-width: calc(50% - 12px);
+    }
+
+
+    /* ================= EXPERIENCE ================= */
+
+    .experience {
+        min-height: 560px;
+    }
+
+
+    /* ================= FEATURES ================= */
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .feature:nth-child(2) {
+        border-right: none;
+    }
+
+    .feature:nth-child(1),
+    .feature:nth-child(2) {
+        border-bottom: 1px solid #ddd5c8;
+    }
+
+
+    /* ================= CTA ================= */
+
+    .cta-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+    /* ================= FOOTER ================= */
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+
+    .footer-links:last-child {
+        grid-column: auto;
+    }
+
+
+    /* ================= CONTENT ================= */
+
+    .content-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .content-image img {
+        height: 500px;
+    }
+
+
+    /* ================= MENU ================= */
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* ================= GALLERY ================= */
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* ================= REVIEWS ================= */
+
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .review-card {
+        max-width: 700px;
+    }
+
+
+    /* ================= CONTACT ================= */
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE — 600px
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: min(90%, 500px);
+    }
+
+    .section {
+        padding: 70px 0;
+    }
+
+
+    /* ================= LOGO ================= */
+
+    .logo strong {
+        font-size: 15px;
+        letter-spacing: 3px;
+    }
+
+    .logo small {
+        font-size: 6px;
+        letter-spacing: 2px;
+    }
+
+    .logo-mark {
+        width: 38px;
+        height: 38px;
+        font-size: 20px;
+    }
+
+
+    /* ================= HERO ================= */
+
+    .hero {
+        min-height: 760px;
+        background-position: 65% center;
+    }
+
+    .hero-overlay {
+        background:
+            linear-gradient(
+                180deg,
+                rgba(10,10,8,0.72),
+                rgba(10,10,8,0.90)
+            );
+    }
+
+    .hero-text {
+        padding-top: 80px;
+    }
+
+    .hero-tag {
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+
+    .hero h1 {
+        margin: 16px 0;
+        font-size: clamp(48px, 14vw, 68px);
+        line-height: 0.98;
+        letter-spacing: -2px;
+    }
+
+    .hero p {
+        font-size: 14px;
+        line-height: 1.7;
+        margin-bottom: 28px;
+    }
+
+
+    /* ================= HERO BUTTONS ================= */
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+
+    /* ================= HERO TRUST ================= */
+
+    .hero-trust {
+        margin-top: 40px;
+        gap: 18px;
+    }
+
+    .rating strong {
+        font-size: 14px;
+    }
+
+    .rating span {
+        font-size: 9px;
+    }
+
+    .hero-scroll {
+        display: none;
+    }
+
+
+    /* ================= HEADINGS ================= */
+
+    .intro-content h2,
+    .section-heading h2 {
+        font-size: 39px;
+    }
+
+    .section-label {
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+
+
+    /* ================= INTRO ================= */
+
+    .intro-grid {
+        gap: 45px;
+    }
+
+    .intro-image img {
+        height: 450px;
+    }
+
+    .experience-badge {
+        width: 115px;
+        height: 115px;
+        right: 15px;
+        bottom: 15px;
+        border-width: 4px;
+    }
+
+    .experience-badge strong {
+        font-size: 31px;
+    }
+
+    .experience-badge span {
+        font-size: 7px;
+    }
+
+    .intro-content p {
+        font-size: 14px;
+    }
+
+
+    /* ================= SECTION HEADING ================= */
+
+    .section-heading {
+        display: block;
+        margin-bottom: 35px;
+    }
+
+    .view-menu {
+        margin-top: 20px;
+    }
+
+
+    /* ================= FOOD ================= */
+
+    .food-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .food-grid .food-card:last-child {
+        grid-column: auto;
+        max-width: none;
+    }
+
+    .food-image {
+        height: 300px;
+    }
+
+    .food-info {
+        padding: 20px;
+    }
+
+    .food-title h3 {
+        font-size: 19px;
+    }
+
+
+    /* ================= EXPERIENCE ================= */
+
+    .experience {
+        min-height: 520px;
+        background-position: center;
+    }
+
+    .experience-content h2 {
+        font-size: 47px;
+    }
+
+    .experience-content p {
+        font-size: 14px;
+    }
+
+
+    /* ================= FEATURES ================= */
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .feature {
+        padding: 35px 20px;
+        border-right: none;
+        border-bottom: 1px solid #ddd5c8;
+    }
+
+    .feature:last-child {
+        border-bottom: none;
+    }
+
+
+    /* ================= CTA ================= */
+
+    .home-cta {
+        padding: 60px 0;
+    }
+
+    .cta-content h2 {
+        font-size: 35px;
+    }
+
+    .cta-content .btn {
+        width: 100%;
+    }
+
+
+    /* ================= FOOTER ================= */
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 60px 0;
+    }
+
+    .footer-brand {
+        grid-column: auto;
+    }
+
+    .footer-links:last-child {
+        grid-column: auto;
+    }
+
+    .footer-bottom .container {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+
+    /* ================= PAGE HERO ================= */
+
+    .page-hero {
+        min-height: 350px;
+    }
+
+    .page-hero h1 {
+        font-size: 48px;
+    }
+
+
+    /* ================= CONTENT ================= */
+
+    .content-section {
+        padding: 70px 0;
+    }
+
+    .content-image img {
+        height: 400px;
+    }
+
+    .content-text h2 {
+        font-size: 39px;
+    }
+
+
+    /* ================= MENU ================= */
+
+    .menu-section {
+        padding: 70px 0;
+    }
+
+    .menu-filters {
+        justify-content: flex-start;
+        gap: 7px;
+    }
+
+    .filter-btn {
+        padding: 9px 13px;
+        font-size: 9px;
+    }
+
+    .menu-item {
+        padding: 14px;
+        gap: 14px;
+    }
+
+    .menu-item img {
+        width: 95px;
+        height: 90px;
+    }
+
+    .menu-item-title h3 {
+        font-size: 17px;
+    }
+
+    .menu-item-title strong {
+        font-size: 13px;
+    }
+
+    .menu-item p {
+        font-size: 11px;
+    }
+
+
+    /* ================= GALLERY ================= */
+
+    .gallery-section {
+        padding: 70px 0;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .gallery-item {
+        height: 300px;
+    }
+
+
+    /* ================= REVIEWS ================= */
+
+    .reviews-section {
+        padding: 70px 0;
+    }
+
+    .review-card {
+        padding: 28px;
+    }
+
+
+    /* ================= CONTACT ================= */
+
+    .contact-section {
+        padding: 70px 0;
+    }
+
+    .contact-info h2 {
+        font-size: 39px;
+    }
+
+    .contact-form {
+        padding: 25px;
+    }
+
+    .map-container {
+        height: 300px;
+        margin-top: 40px;
+    }
+
+
+    /* ================= WHATSAPP ================= */
+
+    .whatsapp-btn {
+        right: 15px;
+        bottom: 15px;
+        padding: 11px 14px;
+    }
+
+    .whatsapp-btn small {
+        font-size: 9px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES — 400px
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .hero {
+        min-height: 720px;
+    }
+
+    .hero h1 {
+        font-size: 46px;
+    }
+
+    .hero-trust {
+        gap: 12px;
+    }
+
+    .intro-image img {
+        height: 380px;
+    }
+
+    .experience-badge {
+        width: 100px;
+        height: 100px;
+    }
+
+    .experience-badge strong {
+        font-size: 27px;
+    }
+
+    .experience-content h2 {
+        font-size: 40px;
+    }
+
+    .food-image {
+        height: 260px;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+
+}
